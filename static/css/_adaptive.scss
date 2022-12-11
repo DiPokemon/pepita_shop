@@ -1,0 +1,130 @@
+@media(max-width:1000px){
+    .offer_block-body{
+        flex-direction: column;
+        gap: 20px
+    }
+    .offer_block-content,
+    .offer_block-image{
+        width: 100%;
+    }
+    .offer_block-image_grid{
+        grid-template-columns: repeat(4, 1fr);
+        transform: none;
+
+        .offer_block-image-item{
+            transform: none;
+
+            &:nth-child(odd){
+                transform: none;    
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .offer_block{
+        padding: 50px 0 0 0;
+    }
+
+    .offer_block-image_grid{
+        display: none;
+    }
+
+    .offer_block-title{
+        font-size: 35px;
+    }
+
+    .offer_block-subtitle{
+        flex-direction: column;
+        gap: 10px;
+    }
+    // .offer_image-slider{
+    //     display: block;
+
+    //     .slick-track{
+    //         padding: 10px 0;
+    //         display: flex;
+    //         gap:10px
+    //     }
+
+        
+    // }
+    // .offer_image-slider-item{  
+
+    //     img{
+    //       box-shadow: 0px 0px 5px $main_blue;        
+    //       max-width: 250px;
+    //       object-fit: cover;
+    //       border-radius: 10px;
+    //     }       
+    // }
+
+    .contacts_block{
+        flex-direction: column;    
+    }
+
+    .half_column{
+            width: 100%;
+        }
+
+    .contact_text img{
+        height: 200px;
+        object-fit: cover;
+    }
+
+    
+
+
+    .designer_block{
+        padding: 0;       
+        
+        .designer_slide{
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+
+        .designer_img{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap:10px;
+
+            img{
+                height: 150px;
+                width: 150px;
+                gap: 10px;
+            }
+
+        }
+
+        .designer_text p{
+            padding:0;
+        }
+    }
+
+
+
+    .testimonial_item{
+        padding: 0
+    }
+}
+
+@media(max-width: 500px){
+    .offer_block-title {
+        font-size: 25px
+    }
+}
+
+@media (max-width: 410px){
+    .section_title{
+        border-bottom: 1px solid $main_red;
+
+        .section_title-text {
+            padding: 0;       
+        }
+
+        h2:after{
+            display:none
+        }
+    }
+}
